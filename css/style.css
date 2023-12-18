@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+/* logo */
+.logo-box {
+  width: 200px;
+}
+.logo-box img {
+  height: 55px;
+  margin-left: 15px;
+  margin-top: 41px;
+}
+/* formbox */
+.form-box {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+/* internel box */
+.Box {
+  /* width: 50%; */
+  text-align: center;
+  /* margin-right: 231px; */
+  padding-top: 109px;
+  /* height: 600px; */
+}
+.Box h1 {
+  margin-bottom: 20px;
+}
+.Box form {
+  margin-top: 23px;
+}
+/* input */
+.Box form input {
+  border: solid 1px #767676;
+  background-color: rgba(0,0,0,.05);
+  letter-spacing: normal;
+  margin: 5.5px;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  color: #111820;
+  padding: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  margin-bottom: 23px;
+}
+/* continue button */
+.Box form #submit {
+  font-size: 14px;
+  width: 190px;
+  height: 40px;
+  padding: 9.5px 20px;
+  background-color: #3665F3;
+  border: none;
+  color: #ffffff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  margin-right: 10px;
+}
+/* resend button */
+.Box form #resendButton {
+  margin-left: 10px;
+}
+.Box form #resendButton:enabled {
+  font-size: 14px;
+  width: 190px;
+  height: 40px;
+  padding: 9.5px 20px;
+  background-color: #ffffff;
+  border: 1px solid #3665F3;
+  color: #3665F3;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+.Box form #resendButton:disabled {
+  font-size: 14px;
+  width: 190px;
+  height: 40px;
+  padding: 9.5px 20px;
+  background-color: #ffffff;
+  color: #C7C7C7;
+  border: 1px solid #C7C7C7;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+/* countdown */
+.Box form #countdownMessage {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+/* support */
+.Box a {
+  font-size: 13px;
+  color: #3665F3;
+}
+/* footer */
+footer {
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  border-top: 1px solid #CCC;
+}
+footer p {
+  color: #41413F;
+  font-size: 12px;
+}
+footer p a{
+  color: #41413F;
+}
+
+/* ----------------------------------------------------------- */
+/* RESPONSIVE */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* Mobile */
+@media only screen and (min-width: 319px) and (max-width: 480px) {
+  /* container */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer */
+  footer {
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-left: 10px;
+    line-height: 18px;
+  }
+  /* logo */
+  .logo-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo-box img {
+    height: 45px;
+  }
+  /* h1 */
+  /* .form-box {
+    /* background-color: lightblue; */
+  
+  .form-box .Box {
+    /* background-color: lightpink; */
+    padding-top: 40px;
+  }
+  .form-box .Box h1 {
+    font-size: 24px;
+  }
+  .form-box .Box p {
+    font-size: 12px;
+  }
+  .form-box .Box form input {
+    height: 33px;
+    width: 33px;
+    font-size: 19px;
+  }
+  .form-box .Box form #submit {
+    width: 80px;
+    padding-right: 75px;
+    font-size: 14px;
+  }
+  .form-box .Box form #resendButton {
+    width: 80px;
+    width: 80px;
+    padding-right: 65px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer */
+  footer {
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-left: 10px;
+    line-height: 18px;
+  }
+  /* logo */
+  .logo-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo-box img {
+    height: 45px;
+  }
+  /* h1 */
+  /* .form-box {
+    background-color: lightblue;
+  } */
+  .form-box .Box {
+    /* background-color: lightpink; */
+    padding-top: 40px;
+  }
+  .form-box .Box h1 {
+    font-size: 24px;
+  }
+  .form-box .Box p {
+    font-size: 12px;
+  }
+  .form-box .Box form input {
+    height: 33px;
+    width: 33px;
+    font-size: 19px;
+  }
+  .form-box .Box form #submit {
+    width: 80px;
+    padding-right: 75px;
+    font-size: 14px;
+  }
+  .form-box .Box form #resendButton {
+    width: 80px;
+    width: 80px;
+    padding-right: 65px;
+    font-size: 14px;
+  }
+}
+
+/* laptop
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+} */
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  .Box {
+    margin-right: 231px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  footer {
+    padding-bottom: 20px;
+  }
+}
